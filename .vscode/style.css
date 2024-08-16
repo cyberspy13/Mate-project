@@ -1,0 +1,52 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+margin: 0;
+font-family: "Inter", sans-serif;
+}
+.menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:  64px;
+}
+.menu{
+    padding: 64px 120px;
+    background-color: #E8EFF9;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.nav__link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #292929;
+}
+.nav{
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height:100vh;
+    padding: 64px 120px;
+    border: 1px solid #000;
+    background-image: url(imgs/Headphones-image-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    height: 800px;
+}
