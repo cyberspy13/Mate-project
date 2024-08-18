@@ -4,6 +4,9 @@ html{
 body{
 margin: 0;
 font-family: "Inter", sans-serif;
+color: #292929;
+font-size: 16px;
+line-height: 140%;
 }
 .menu_top{
     display: flex;
@@ -11,6 +14,8 @@ font-family: "Inter", sans-serif;
     margin-bottom:  64px;
 }
 .menu{
+    display: none;
+
     box-sizing: border-box;
     padding: 64px 120px;
     background: #E8EFF9;
@@ -59,5 +64,78 @@ font-family: "Inter", sans-serif;
     justify-content: space-between;
 }
 section{
-    height: 800px;
+    height: 100vh;
 }
+.main{
+    padding: 120px;
+}
+.recommendedTitle{
+    margin-top: 0;
+    margin-bottom: 64;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+.recommendedClass{
+margin-bottom: 120px;
+}
+
+.headerTitle{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 100%;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    
+}
+.browseBose{
+    margin-top: 0;
+    margin-bottom: 64;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+.whyBuyDirect{
+    margin-top: 0;
+    margin-bottom: 64;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    
+
+}
+.recomm_products{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+}
+.productOne{
+    width: 100%;
+    margin-bottom: 32;
+}
+.productTitle{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.productCategory{
+    margin-top: 0;
+    margin-bottom: 12px;
+
+}
+.prodctPrice{
+    margin: 0;
+    font-weight: bold;
+}
+.product{
+    flex-grow: 1;
+}
+  
+
