@@ -21,10 +21,20 @@ line-height: 140%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .header__top{
     display: flex;                   /* flexible items positioning */
     justify-content: space-between;
+}
+.headerTitle{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 100%;
+    font-style: italic;
+    letter-spacing: -1.5px;   
 }
 /* #endregion */
 /* #region menu */
@@ -35,12 +45,12 @@ line-height: 140%;
     background: #E8EFF9;
     height: 100vh;
     flex-direction: column;
-    position: fixed;
+    position: fixed;            /* fixed page position */
     top: 0;
     right: 0;
     left: 0;
-    transform:translateX(-100%);
-    transition: transform  500ms;
+    transform:translateX(-100%); /* horizontal move */
+    transition: transform  500ms;/* slow page opening */
 }
 .menu_top{
     display: flex;
@@ -68,105 +78,161 @@ line-height: 140%;
     transform:translateX(0%);
 }
 
-
-
-
-
 section{
     height: 100vh;
 }
 .main{
-    padding: 120px;
+    padding: 120px; /* margin from all sides: up/bottom/left/right*/
+    background-color: white;
 }
+/* #region recommended */
 .recommendedTitle{
     margin-top: 0;
     margin-bottom: 64;
-    font-size: 48px;
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+.categoriesTitle{
+    margin-top: 0;
+    margin-bottom: 84px;
+    font-size: 58px;
     font-weight: bold;
     line-height: 100%;
     letter-spacing: -1.5px;
     text-align: center;
 }
 .recommendedClass{
-margin-bottom: 120px;
+    margin-bottom: -30px;
+    max-width: 1900px;
+    margin-left: 220px;
+    margin-right: 220px;
 }
-.headerTitle{
-    margin-top: 40px;
-    margin-bottom: 0;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 100%;
-    font-style: italic;
-    letter-spacing: -1.5px;   
-}
-.browseBose{
-    margin-top: 0;
-    margin-bottom: 64;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 100%;
-    letter-spacing: -1.5px;
-    text-align: center;
-}
-.whyBuyDirect{
-    margin-top: 0;
-    margin-bottom: 64;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 100%;
-    letter-spacing: -1.5px;
-}
-.recomm_products{
+.recommended_products{
     display: flex;
     gap: 24px;
     justify-content: center;
 }
-.productPhoto{
-    width: 100%;
-    margin-bottom: 32px;
-}
-.productTitle{
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 16px;
-    line-height: 140%;
-}
-.productCategory{
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-.productPrice{
-    margin: 0;
-    font-weight: bold;
-}
+/* #endregion */
+/* #region product */
 .product{
     flex-grow: 1;
     flex-basis: 324px;
+    
 }
-.categories{
-    max-width: 1020px;
-    margin: 0 auto;
-    margin-bottom: 120px;
+.productPhoto{
+    width: 100%; /*full resolution of parent element*/
+    margin-bottom: 32px;
 }
-  .cat_photoes{
-    display: flex; /* photoes positioned in one horizontal line*/
+.productTitle{
+    margin-top: 0; /*should be 0 coz we set mb as 32px for the productPhoto*/
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 140%;
+    font-style: arial;
+}
+.productCategory{
+    margin-top: 0; 
+    margin-bottom: 12px;
+    font-style: arial;
+    font-size: 25px;
+    font-weight: bold;
+}
+.productPrice{
+    margin-top: 0; 
+    font-weight: bold;
+    font-style: arial;
+    font-size: 25px;
+}
+/* #endregion */
+
+/* #region categories */
+.cat_photoes{
+    display: flex;
     gap: 3%;
     margin-bottom: 16px;
-}
-.cat_title{
-
-margin: 0;
-
 }
 .category{
     margin-bottom: 64px;
 }
-  .photo-wide{
-width: 65%;
-  }
-  .photo-squere{
-width: 32%;
-  }
+.photo_square{
+    width: 32%;
+}
+.photo_wide{
+    width: 65%;
+}
+.categories{
+    margin-bottom: 1100px;
+    max-width: 1900px;
+    margin-left: 220px;
+    margin-right: 220px;
+ 
+}
+.cat_title{
+    font-weight: bold;
+    font-style: arial;
+    font-size: 25px;
+}
+/* #endregion */
+
+/* #region how_to_buy */
 
 
+.how_to_BuyTitle{
+    flex-basis: 50%;
+    margin-top: 0;
+    margin-bottom: 64;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+.how_to_buy{
+    gap: 24px;
+    display: flex;
+    max-width: 1900px;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-bottom: 120px;
+}
+.how_to_buy_content{
+    flex-basis: 50%;
+}
+.htb_benefits{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.htb_description{
+    font-size: 25px;
+    font-weight:bold;
+}
+.how_to_BuyTitle{
+    font-size: 58px;
+}
 
+/* #endregion */    
+
+.footer{
+   background-image: url(imgs/footerPicture.png);
+   height: 460px;
+   position: sticky;
+   bottom: 0;
+   z-index: -1;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   max-width: 1900px;
+   margin-left: 220px;
+   margin-right: 220px;
+   
+    
+}   
